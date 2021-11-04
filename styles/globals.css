@@ -1,14 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: 'News Cycle', sans-serif;
+  /* background: linear-gradient(90deg, #FFAD9F, #FCFCFC); */
+  /* background: linear-gradient(to bottom, #FFAD9F, #FCFCFC); */
+  background: linear-gradient(to bottom right, #FFAD9F, #FCFCFC);
+  font-size: bold;
 }
 
 * {

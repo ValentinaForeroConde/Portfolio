@@ -8,10 +8,10 @@ const index = () => {
   return (
     <>
       <Layout>
-        <About/>
-        <Projects/>
-        <Skills/>
-        <Contact/>
+          <About/>
+          <Projects/>
+          <Skills/>
+          <Contact/>
       </Layout>
     </>
   )

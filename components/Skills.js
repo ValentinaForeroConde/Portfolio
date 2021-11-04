@@ -4,28 +4,29 @@ import { faPython, faJava, faHtml5, faCss3, faJsSquare, faReact, faNodeJs } from
 
 const Skills = () => {
     return (
-        <div id="skills">
-            <ul>
+        <div id="skills" className="flex flex-col bg-pink-200 m-2 rounded-md mb-6">
+            <h1 className="text-center text-lg">SKILLS</h1>
+            <ul className="flex justify-center p-4">
                 <li>
-                    <a><FontAwesomeIcon icon={faPython} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://www.python.org/"><FontAwesomeIcon icon={faPython} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faJava} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://docs.oracle.com/en/java/"><FontAwesomeIcon icon={faJava} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faHtml5} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href=""><FontAwesomeIcon icon={faHtml5} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faCss3} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href=""><FontAwesomeIcon icon={faCss3} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faJsSquare} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href=""><FontAwesomeIcon icon={faJsSquare} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faReact} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://reactjs.org/"><FontAwesomeIcon icon={faReact} /></a>
                 </li>
                 <li>
-                    <a><FontAwesomeIcon icon={faNodeJs} /></a>
+                    <a className="hover:text-pink-500 text-3xl" href="https://nodejs.org/en/"><FontAwesomeIcon icon={faNodeJs} /></a>
                 </li>
             </ul>
         </div>

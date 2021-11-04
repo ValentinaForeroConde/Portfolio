@@ -6,7 +6,7 @@ const Layout = ({children}) => {
   return (
     <div>
       <Header/>
-      <main>
+      <main className="w-72 md:w-3/4 ... m-auto">
         {children}
       </main>
       <Footer/>
