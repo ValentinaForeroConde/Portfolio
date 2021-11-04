@@ -4,7 +4,7 @@ import { faPython, faJava, faHtml5, faCss3, faJsSquare, faReact, faNodeJs } from
 
 const Skills = () => {
     return (
-        <div>
+        <div id="skills">
             <ul>
                 <li>
                     <a><FontAwesomeIcon icon={faPython} /></a>

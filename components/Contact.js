@@ -4,7 +4,7 @@ import { faTwitter, faInstagram, faGithub, faGoogle } from '@fortawesome/free-br
 
 const Contact = () => {
     return (
-        <div>
+        <div id="contact">
             <h1>Contact me</h1>
             <div>
                 <ul>
