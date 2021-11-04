@@ -29,8 +29,14 @@ const Navbar = () => {
                         <li className="nav-item">
                         <a className="nav-link" href="#contact">Contact</a>
                         </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">Source</a>
+                        <li className="nav-item" >
+                            <Link  href="https://github.com/ValentinaForeroConde/Portfolio">
+                                <div className="d-flex align-items-center" >
+                                    <FontAwesomeIcon className="text-white" icon={faGithub} />
+                                    <a className="nav-link mx-1" >
+                                    Source</a>
+                                </div>
+                            </Link>
                         </li>
                     </ul>
                 </div>
