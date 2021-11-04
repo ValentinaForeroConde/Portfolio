@@ -12,46 +12,39 @@ const Header = () => {
     <div>
       <nav className="flex items-center flex-wrap bg-teal-500 p-6 justify-between z-50">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-             <a href="/" className="font-semibold text-xl tracking-tight">Valentina Forero</a>
+            <Link href="/">
+              <a  className="font-semibold text-xl tracking-tight">Valentina Forero</a>
+            </Link>
          </div>
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="#about"
-                    className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    About me
-                  </a>
-
-                  <a
-                    href="#project"
-                    className="hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="#skills"
-                    className="hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    Skills
-                  </a>
-
-                  <a
-                    href="#contact"
-                    className="hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium"
-                  >
-                    Contact me
-                  </a>
-
-                  <a
-                    href="https://github.com/ValentinaForeroConde/Portfolio"
-                    className="hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium"
-                  >
+                  <Link href="#about">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      About me
+                    </a>
+                  </Link>
+                  <Link href="#projects">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      Projects
+                    </a>
+                  </Link>
+                  <Link href="#skills">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      Skills
+                    </a>
+                  </Link>
+                  <Link href="#contact">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      Contact me
+                    </a>
+                  </Link>
+                  <Link href="https://github.com/ValentinaForeroConde/Portfolio">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
                     Source <FontAwesomeIcon classNameName="text-black" icon={faGithub} />
-                  </a>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -114,40 +107,31 @@ const Header = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="#"
-                  className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <Link href="#about">
+                  <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
                   About me
                 </a>
-
-                <a
-                  href="#"
-                  className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </Link>
+                <Link href="#projects">
+                  <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
                   Projects
                 </a>
-
-                <a
-                  href="#"
-                  className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </Link>
+                <Link href="#skills">
+                  <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
                   Skills
                 </a>
-
-                <a
-                  href="#"
-                  className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </Link>
+                <Link href="#contact">
+                  <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
                   Contact me
                 </a>
-
-                <a
-                  href="https://github.com/ValentinaForeroConde/Portfolio"
-                  className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium"
-                >
+                </Link>
+                <Link href="https://github.com/ValentinaForeroConde/Portfolio">
+                  <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
                   Source <FontAwesomeIcon classNameName="text-black" icon={faGithub} />
                 </a>
+                </Link>
               </div>
             </div>
           )}
