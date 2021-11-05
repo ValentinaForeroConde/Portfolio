@@ -35,9 +35,14 @@ const Header = () => {
                       Skills
                     </a>
                   </Link>
+                  <Link href="#resources">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      Spanish
+                    </a>
+                  </Link>
                   <Link href="#contact">
                     <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
-                      Contact me
+                      Contact
                     </a>
                   </Link>
                   <Link href="https://github.com/ValentinaForeroConde/Portfolio">
@@ -122,9 +127,14 @@ const Header = () => {
                   Skills
                 </a>
                 </Link>
+                <Link href="#resources">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                      Spanish
+                    </a>
+                </Link>    
                 <Link href="#contact">
                   <a className="hover:bg-pink-200 text-black block px-3 py-2 rounded-md text-base font-medium">
-                  Contact me
+                  Contact
                 </a>
                 </Link>
                 <Link href="https://github.com/ValentinaForeroConde/Portfolio">
