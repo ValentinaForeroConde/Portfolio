@@ -1,6 +1,26 @@
 import React from 'react'
+import Swal from 'sweetalert2'
+
 
 const About = () => {
+
+    const modal = () => {
+        Swal.fire({
+            title: 'I will receive this message in my email inbox',
+            html:
+              '<input id="swal-input1" class="swal2-input">' +
+              '<input id="swal-input2" class="swal2-input">',
+            showCancelButton: true,
+            confirmButtonText: "Send",
+            preConfirm: () => {
+              return [
+                document.getElementById('swal-input1').value,
+                document.getElementById('swal-input2').value
+              ]
+            }
+          })
+      };
+
     return (
         <div>
             <div id="about" className="flex flex-col items-center bg-pink-200 m-2 rounded-md p-2 mb-8">
@@ -21,7 +41,8 @@ const About = () => {
                 During my university studies I participated in research groups like Parkinson’s, where we analyzed and processed electroencephalographic signals. I also did my capstone project with the automation research group for isolated cubicles of the ICU of a clinic, where I designed a prototype of an electronic call nurse bell, in arduino with IoT applications. From this path has arisen my interest in research, I belong to a program of young women researchers of the Ministry of Science of Colombia.
                 Recently, my interests are related to becoming a web developer, I dream to belong of the great technology industry. </p>
                 <div className="flex justify-center mt-4">
-                    <button className="rainbow  flex rounded-md justify-center h-8 w-24">
+                    <button onClick={()=>modal()}
+                    className="rainbow  flex rounded-md justify-center h-8 w-24">
                         Hire me
                     </button>
                 </div>

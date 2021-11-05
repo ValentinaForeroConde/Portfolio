@@ -128,7 +128,7 @@ const Header = () => {
                 </a>
                 </Link>
                 <Link href="#resources">
-                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-lg font-medium">
+                    <a className=" hover:bg-pink-200 text-black px-3 py-2 rounded-md text-base font-medium">
                       Spanish
                     </a>
                 </Link>    
