@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPython, faJava, faHtml5, faCss3, faJsSquare, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faPython, faJava, faHtml5, faCss3, faJsSquare, faReact, faNodeJs, faFigma, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import {faDatabase} from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
     return (
@@ -26,8 +27,17 @@ const Skills = () => {
                     <a className="hover:text-pink-500 text-3xl p-2" href="https://reactjs.org/"><FontAwesomeIcon icon={faReact} /></a>
                 </li>
                 <li>
-                    <a className="hover:text-pink-500 text-3xl" href="https://nodejs.org/en/"><FontAwesomeIcon icon={faNodeJs} /></a>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://nodejs.org/en/"><FontAwesomeIcon icon={faNodeJs} /></a>
                 </li>
+                <li>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://www.figma.com/"><FontAwesomeIcon icon={faFigma} /></a>
+                </li>
+                <li>
+                    <a className="hover:text-pink-500 text-3xl p-2" href=""><FontAwesomeIcon icon={faDatabase} /></a>
+                </li> 
+                <li>
+                    <a className="hover:text-pink-500 text-3xl p-2" href="https://git-scm.com/doc"><FontAwesomeIcon icon={faGitAlt} /></a>
+                </li> 
             </ul>
         </div>
     )

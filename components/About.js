@@ -16,9 +16,15 @@ const About = () => {
                     </h3>
                 </div>
             </div> 
-            <div className="flex justify-center bg-pink-200 m-2 rounded-md p-6 mb-6">
-                <p className="flex mr-5">Hi there, i´m biomedical engineer passionate about tecnology and web development</p>
-                <button className="rainbow  flex items-center rounded-md bg-black text-white">Hire me</button>
+            <div className="flex flex-col justify-center bg-pink-200 m-2 rounded-md p-6 mb-6">
+                <p className="flex mr-5 text-justify">Hi there, i´m biomedical engineer passionate about tecnology and web development, I am constantly taking online courses and practice by myself to improve my dev skills, I like collaborative work, I also interact constantly with the community of developers.
+                During my university studies I participated in research groups like Parkinson’s, where we analyzed and processed electroencephalographic signals. I also did my capstone project with the automation research group for isolated cubicles of the ICU of a clinic, where I designed a prototype of an electronic call nurse bell, in arduino with IoT applications. From this path has arisen my interest in research, I belong to a program of young women researchers of the Ministry of Science of Colombia.
+                Recently, my interests are related to becoming a web developer, I dream to belong of the great technology industry. </p>
+                <div className="flex justify-center mt-4">
+                    <button className="rainbow  flex rounded-md justify-center h-8 w-24">
+                        Hire me
+                    </button>
+                </div>
             </div>  
         </div>
     )
