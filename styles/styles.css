@@ -9,4 +9,6 @@
     background-image: linear-gradient(90deg, #95b8f6 0%, #add5fa 49%, #f9d99a 80%, #f9a59a 100%);
     animation:slidebg 5s linear infinite;
  }
- 
+ .backgound-card{
+    background: linear-gradient(to bottom right, #FCFCFC, #FFAD9F);
+ }

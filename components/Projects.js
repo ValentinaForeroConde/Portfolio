@@ -46,7 +46,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div id="projects" className="mt-8 flex flex-col items-center bg-pink-200 m-2 rounded-md p-4 mb-8">
+      <div id="projects" className="mt-8 flex flex-col items-center m-2 rounded-md p-4 mb-8 backgound-card">
         <h1 className="text-center text-lg pb-2">PROJECTS</h1>
         <div className="max-w-lg h-40 md:h-72 flex overflow-hidden relative">
           <AiOutlineLeft
