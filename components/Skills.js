@@ -15,13 +15,13 @@ const Skills = () => {
                     <a className="hover:text-pink-400 text-3xl p-2" href="https://docs.oracle.com/en/java/"><FontAwesomeIcon icon={faJava} /></a>
                 </li>
                 <li>
-                    <a className="hover:text-pink-400 text-3xl p-2" href=""><FontAwesomeIcon icon={faHtml5} /></a>
+                    <a className="hover:text-pink-400 text-3xl p-2" href="https://www.w3schools.com/html/html_form_input_types.asp"><FontAwesomeIcon icon={faHtml5} /></a>
                 </li>
                 <li>
-                    <a className="hover:text-pink-400 text-3xl p-2" href=""><FontAwesomeIcon icon={faCss3} /></a>
+                    <a className="hover:text-pink-400 text-3xl p-2" href="https://www.w3schools.com/css/default.asp"><FontAwesomeIcon icon={faCss3} /></a>
                 </li>
                 <li>
-                    <a className="hover:text-pink-400 text-3xl p-2" href=""><FontAwesomeIcon icon={faJsSquare} /></a>
+                    <a className="hover:text-pink-400 text-3xl p-2" href="https://www.w3schools.com/js/default.asp"><FontAwesomeIcon icon={faJsSquare} /></a>
                 </li>
                 <li>
                     <a className="hover:text-pink-400 text-3xl p-2" href="https://reactjs.org/"><FontAwesomeIcon icon={faReact} /></a>
