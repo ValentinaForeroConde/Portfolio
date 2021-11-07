@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Swipe from "react-easy-swipe";
 import {projects} from '../profile'
-
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -54,26 +56,51 @@ class Projects extends Component {
             className="absolute left-0 text-3xl inset-y-1/2 text-pink-500 cursor-pointer"
           />
           <Swipe onSwipeLeft={this.nextSlide} onSwipeRight={this.prevSlide}>
+            <div>
             {projects.map((slide, index) => {
               return (
-                <img
-                  src={slide.image}
-                  alt="This is a carousel slide"
-                  key={index}
-                  className={
-                    index === this.state.currentSlide
-                      ? "block w-full h-auto object-cover"
-                      : "hidden"
-                  }
-                  onMouseEnter={() => {
-                    this.setState({ paused: true });
-                  }}
-                  onMouseLeave={() => {
-                    this.setState({ paused: false });
-                  }}
-                />
+                <div key={index}>
+                  <div className="flex flex-end text-lg m-1">
+                  <p className={
+                      index === this.state.currentSlide
+                        ? "block w-full h-auto object-cover"
+                        : "hidden"
+                    }>{slide.name}</p>
+                    <div className={
+                        index === this.state.currentSlide
+                          ? "block w-full h-auto object-cover"
+                          : "hidden"
+                      }>
+                      <Link  href={slide.url} >
+                        <a className="hover:bg-pink-200 text-black">Source<FontAwesomeIcon classNameName="text-black" icon={faGithub} /></a>
+                        
+                      </Link>
+                    </div>
+                    {/* <p className={
+                      index === this.state.currentSlide
+                        ? "block w-full h-auto object-cover"
+                        : "hidden"
+                    }>{slide.url}</p> */}
+                    </div>
+                  <img
+                    src={slide.image}
+                    alt="This is a carousel slide"
+                    className={
+                      index === this.state.currentSlide
+                        ? "block w-full h-auto object-cover"
+                        : "hidden"
+                    }
+                    onMouseEnter={() => {
+                      this.setState({ paused: true });
+                    }}
+                    onMouseLeave={() => {
+                      this.setState({ paused: false });
+                    }}
+                  />
+                </div>
               );
             })}
+            </div>
           </Swipe>
           <div className="absolute w-full flex justify-center bottom-0">
             {projects.map((element, index) => {
@@ -97,6 +124,7 @@ class Projects extends Component {
             className="absolute right-0 text-3xl inset-y-1/2 text-pink-500 cursor-pointer"
           />
         </div>
+        
       </div>
     );
   }
