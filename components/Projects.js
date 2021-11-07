@@ -60,7 +60,7 @@ class Projects extends Component {
             {projects.map((slide, index) => {
               return (
                 <div key={index}>
-                  <div className="flex flex-end text-lg m-1">
+                  <div className="flex justify-between text-lg m-1">
                   <p className={
                       index === this.state.currentSlide
                         ? "block w-full h-auto object-cover"
@@ -72,7 +72,7 @@ class Projects extends Component {
                           : "hidden"
                       }>
                       <Link  href={slide.url} >
-                        <a className="hover:bg-pink-200 text-black">Source<FontAwesomeIcon classNameName="text-black" icon={faGithub} /></a>
+                        <a className="hover:bg-pink-200 text-black ml-12 md:ml-44">Source <FontAwesomeIcon classNameName="text-black" icon={faGithub} /></a>
                         
                       </Link>
                     </div>
