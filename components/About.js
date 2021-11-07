@@ -8,7 +8,7 @@ const About = () => {
                 <div className="flex flex-wrap justify-center m-5">
                     <h1 className="text-3xl md:text-5xl md:mt-10 text-center font-semibold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-purple-500 mb-4"> Welcome to my <br/> personal portfolio!</h1>
                     <div className="flex-none w-40 m-4">
-                        <img src="pic.jpg" alt="" className=" inset-0 w-full h-full object-cover rounded-full border-black border-2 "/>
+                        <img src="pic.jpg" alt="" className=" inset-0 w-full h-full object-cover rounded-full border-pink-400 border-2 "/>
                     </div>
                 </div>
                 <div className="flex flex-wrap">
