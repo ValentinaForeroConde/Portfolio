@@ -50,7 +50,7 @@ class Projects extends Component {
     return (
       <div id="projects" className="mt-8 flex flex-col items-center m-2 rounded-md p-4 mb-8 backgound-card">
         <h1 className="text-center text-lg pb-2">PROJECTS</h1>
-        <div className="max-w-lg h-40 md:h-72 flex overflow-hidden relative">
+        <div className="max-w-lg h-44 md:h-72 flex overflow-hidden relative">
           <AiOutlineLeft
             onClick={this.prevSlide}
             className="absolute left-0 text-3xl inset-y-1/2 text-pink-500 cursor-pointer"
@@ -72,7 +72,7 @@ class Projects extends Component {
                           : "hidden"
                       }>
                       <Link  href={slide.url} >
-                        <a className="hover:bg-pink-200 text-black ml-12 md:ml-44">Source <FontAwesomeIcon classNameName="text-black" icon={faGithub} /></a>
+                        <a className="hover:bg-pink-200 text-black ml-10 md:ml-44">Source <FontAwesomeIcon classNameName="text-black" icon={faGithub} /></a>
                         
                       </Link>
                     </div>
